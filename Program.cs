@@ -6,6 +6,12 @@ namespace cs_playground
     {
         static void Main(string[] args)
         {
+            string choice;
+            Console.WriteLine("Enter 1 if you want Fibonacci series,");
+            Console.Write("enter 2 if you want something else - ");
+            choice = Console.ReadLine();
+            if (choice == "1"){
+
                 Console.WriteLine("Hello World! This is the beginning of Fibonacci's series");
 
                 string limit_str;
@@ -26,5 +32,9 @@ namespace cs_playground
                     Console.WriteLine(arr[i] + " ");
                 }
             }
+            else if (choice != "1"){
+                Console.WriteLine("Something else");
+            }
         }
     }
+}
