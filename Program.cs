@@ -10,7 +10,7 @@ namespace cs_playground
         {
             string choice;
             Console.WriteLine("Enter 1 if you want Fibonacci series,");
-            Console.Write("enter 2 if you want something else - ");
+            Console.Write("enter 0 if you want to exit --> ");
             choice = Console.ReadLine();
             if (choice == "1"){
                 Fibonacci fibo = new Fibonacci();
