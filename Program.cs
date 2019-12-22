@@ -4,6 +4,8 @@ namespace FibonacciExtension{
     class Fibonacci {
         // # constructor
         public Fibonacci() {
+        }
+        public void GetFibonacciSeries(){
             Console.WriteLine("Hello World! This is the beginning of Fibonacci's series");
             string limit_str;
             Console.Write("Enter the length of the series - ");
@@ -38,7 +40,8 @@ namespace cs_playground
             choice = Console.ReadLine();
             if (choice == "1"){
                 Console.WriteLine("Fibonacci here");
-                Fibonacci a = new Fibonacci();
+                Fibonacci fibo = new Fibonacci();
+                fibo.GetFibonacciSeries();
             }
             else if (choice != "1"){
                 Console.WriteLine("Something else");
